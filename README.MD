@@ -1,12 +1,17 @@
-## dependencies
+# PTZ Camera Test
 
-qt6-base
-qt6-wayland
-mesa
-ttf-dejavu
+## Dependencies
 
-**Note:** If you encounter Qt errors under Wayland (`qt.qpa.plugin`), set the platform explicitly before running the script:  
-bash = export QT_QPA_PLATFORM=xcb
+- `qt6-base`
+- `qt6-wayland`
+- `mesa`
+- `ttf-dejavu`
+
+**Note:**  
+If you encounter Qt errors under Wayland (`qt.qpa.plugin`), set the platform explicitly before running the script:
+
+```bash
+export QT_QPA_PLATFORM=xcb
 
 
 ## terminal testing setup instructions:
@@ -19,6 +24,6 @@ python ~/ptz_test/test_ptz.py
 
 ## controls
 
-left and right arrow keys pan camera left and right
-up and down arrow keys handle zooming in and out
-q to quit
+- left and right arrow keys pan camera left and right
+- up and down arrow keys handle zooming in and out
+- q to quit
